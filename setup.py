@@ -13,6 +13,10 @@ config_dirpath = os.path.expandvars(os.path.expanduser("~/.yolog"))
 if os.path.exists(config_dirpath):
     shutil.rmtree(config_dirpath)
 
+if len(sys.argv) < 2:
+    print ("Please pass in an argument 'build', 'install' or 'develop'")
+    exit(1)
+
 if sys.argv[1] in {"build", "install", "develop"}:
     os.mkdir(config_dirpath)
     config = SafeConfigParser()
