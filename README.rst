@@ -14,14 +14,17 @@ Beautify your git logs !
 
 Git logs look like this by default:
 
-.. image:: https://raw.githubusercontent.com/karandesai-96/yolog/master/docs/ordinary.png
+.. image:: https://raw.githubusercontent.com/ocomsoft/yolog/master/docs/ordinary.png
 
 Yolog wraps over standard git log and represents commit message history in a compact manner. It provides a
 visualization of commit graph, and shows refs, tags and unmerged branches altogether. A yolog powered git log looks
 like this:
 
-.. image:: https://raw.githubusercontent.com/karandesai-96/yolog/master/docs/yolog-powered.png
+.. image:: https://raw.githubusercontent.com/ocomsoft/yolog/master/docs/yolog-powered.png
 
+Credit
+-------
+ALL Credit goes to https://github.com/kdexd/yolog who developed this software originally.
 
 Installation
 ------------
@@ -31,7 +34,7 @@ Obtain stable release from PyPI
 
 Alternatively, to obtain the bleeding edge version, clone the repo and build it from source:
 ::
-  git clone https://www.github.com/karandesai-96/yolog
+  git clone https://www.github.com/ocomsoft/yolog
   cd yolog && python setup.py install
 
 
@@ -49,7 +52,7 @@ Usage
   - ``COLOR`` can be one of: ``RED, GREEN, YELLOW, BLUE, CYAN, PURPLE, BLACK, WHITE``
   - Arguments ``attribute`` and ``COLOR`` are case insensitive.
 
-.. image:: https://raw.githubusercontent.com/karandesai-96/yolog/master/docs/color-changing.png
+.. image:: https://raw.githubusercontent.com/ocomsoft/yolog/master/docs/color-changing.png
 
 * It also accepts arguments which are used to filter output. These arguments are same as those accepted by standard
 git log.
